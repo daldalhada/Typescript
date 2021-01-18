@@ -1,13 +1,22 @@
-const printing = (nick: string , age: number, gender: string): void => {
-    console.log(`nick: ${nick}, age: ${age}, gender: ${gender}`);
+class Human {
+    public nick: string;
+    public age: number;
+    public gender: string;
+
+    constructor(nick: string, age: number, gender: string){
+        this.nick = nick;
+        this.age = age;
+        this.gender = gender;
+    }
+}
+
+const daldal = new Human("daldalhada", 24, "male");
+
+const printing = (person: Human): string => {
+    return `nick: ${person.nick}, age: ${person.age}, gender: ${person.gender}`;
 };
 
-const printing2 = (nick: string , age: number, gender: string): string => {
-    return `nick: ${nick}, age: ${age}, gender: ${gender}`;
-};
-
-printing("daldalhada", 27, "male");
-console.log(printing2("daldalhada", 27, "male"));
+console.log(printing(daldal));
 
 export {};
 
