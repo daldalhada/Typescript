@@ -1,22 +1,28 @@
-class Human {
-    public nick: string;
-    public age: number;
-    public gender: string;
-
-    constructor(nick: string, age: number, gender: string){
-        this.nick = nick;
-        this.age = age;
-        this.gender = gender;
+class Block {
+    public index: number;
+    public hash: string;
+    public previousHash: string;
+    public data: string;
+    public timestamp: number;
+    constructor(
+        index: number, 
+        hash: string,
+        previousHash: string,
+        data: string,
+        timestamp: number
+    ){
+        this.index = index;
+        this.hash = hash;
+        this.previousHash = previousHash;
+        this.data = data;
+        this.timestamp = timestamp;
     }
 }
 
-const daldal = new Human("daldalhada", 24, "male");
+const genesisBlock:Block = new Block(0, "21231231", "", "Hello", 123456);
 
-const printing = (person: Human): string => {
-    return `nick: ${person.nick}, age: ${person.age}, gender: ${person.gender}`;
-};
+let blockchain: [Block] = [genesisBlock];
 
-console.log(printing(daldal));
+console.log(blockchain);
 
 export {};
-
