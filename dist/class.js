@@ -9,4 +9,4 @@ const printing = (person) => {
     return `nick: ${person.nick}, age: ${person.age}, gender: ${person.gender}`;
 };
 console.log(printing(person));
-//# sourceMappingURL=index2.js.map
+//# sourceMappingURL=class.js.map
