@@ -1,8 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const nick = "daldahada", age = 24, gender = "male";
-const printing = (name, age, gender) => {
+const printing = (nick, age, gender) => {
     console.log(`nick: ${nick}, age: ${age}, gender: ${gender}`);
 };
-printing(nick, age);
+const printing2 = (nick, age, gender) => {
+    return `nick: ${nick}, age: ${age}, gender: ${gender}`;
+};
+printing("daldalhada", 27, "male");
+printing2("daldalhada", 27, "male");
 //# sourceMappingURL=index.js.map
