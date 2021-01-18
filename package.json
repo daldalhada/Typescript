@@ -1,0 +1,15 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/daldalhada/typescript.git",
+  "author": "daldahada",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "prestart": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^4.1.3"
+  }
+}
