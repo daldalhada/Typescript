@@ -1,15 +1,6 @@
 # Typescript
 learn Typescript
 
-* Environment
-
-    - Node.js: 14.15.4(LTS)
-    - OS: Window10
-    - Express: 4.17.1
-    - MySQL: 8.0.21
-    - MongoDB: 4.4.3
-
-***
 
 <br>
 
@@ -22,11 +13,13 @@ learn Typescript
   - 하지만, 이 특징은 큰 프로젝트를 한다거나 팀으로 일을 한다거나 버그를 최소화하고 싶을 때에는 단점이 됨
   - 즉, 언어가 예측 가능하고 읽기 쉬운 코드로 만들어주는 등 Javascript를 더 잘 사용할 수 있게 해줌
 
+<br>
 
 ### 2. package.json
   - yarn init 명령어를 통해 package.json 생성
   - yarn-error.log 파일도 같이 생성됨
 
+<br>
 
 ### 3. Typescript 세팅
   - yarn global add typescript 실행
@@ -53,6 +46,8 @@ learn Typescript
   - include: 컴파일 과정에서 포함할 파일의 배열
 
 
+<br>
+
 ### 4. 컴파일
 
 ```JSON
@@ -69,6 +64,7 @@ learn Typescript
   - tsc 혹은 npx tsc 명령어를 실행. 이는, 컴파일해서 index.js랑 index.js.map을 만들어 줌
   - package.json을 다음과 같이 수행 후 yarn start 명령어 실행 
 
+<br>
 
 ### 5. 예제
 
